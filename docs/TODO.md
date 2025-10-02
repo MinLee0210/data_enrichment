@@ -1,8 +1,8 @@
 # TODO
 
-## Famous people collection.
+## 02/10/2025
 
-- [ ] Famous people collection.
-    - [ ] Scrape from wikipedia. -> have names and images (if any).
-    - [ ] Download images (can be manual or automation, depends on skill).
-- [ ] Detecting face and landmarks
+- [x] Scrape German artist on Wiki
+- [ ] Scrape German Politicians on Wiki
+- [ ] Download all images of those politicians.
+- [ ] Download all images of those artists.
