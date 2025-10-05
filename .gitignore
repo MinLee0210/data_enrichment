@@ -211,3 +211,6 @@ __marimo__/
 # Credentials
 credentials/*
 data/*
+
+**/*.cfg
+*.settings.py
