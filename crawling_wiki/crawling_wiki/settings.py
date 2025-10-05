@@ -26,11 +26,12 @@ ADDONS = {}
 ROBOTSTXT_OBEY = True
 
 # Be polite
-DOWNLOAD_DELAY = 1        # 1 second between requests per worker
+DOWNLOAD_DELAY = 1  # 1 second between requests per worker
 RANDOMIZE_DOWNLOAD_DELAY = True
+DOWNLOAD_TIMEOUT = 15  # 15 seconds max per request
 
 # Concurrency
-CONCURRENT_REQUESTS = 6   # 5–6 workers
+CONCURRENT_REQUESTS = 6  # 5–6 workers
 CONCURRENT_REQUESTS_PER_DOMAIN = 6
 
 # Disable cookies (enabled by default)

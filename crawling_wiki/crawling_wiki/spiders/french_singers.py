@@ -1,31 +1,11 @@
-"Ref: https://en.wikipedia.org/wiki/Lists_of_German_politicians"
-
 import scrapy
 from tqdm import tqdm
 from scrapy import signals
 
 
-class GermanPoliticiansSpider(scrapy.Spider):
-    name = "german_politicians"
-
-    start_urls = [
-        "https://en.wikipedia.org/wiki/List_of_Alternative_for_Germany_politicians",
-        "https://en.wikipedia.org/wiki/List_of_Christian_Social_Union_of_Bavaria_politicians",
-        "https://en.wikipedia.org/wiki/List_of_Bavarian_People%27s_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Centre_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Christian_Democratic_Union_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Communist_Party_members",
-        "https://en.wikipedia.org/wiki/List_of_German_Democratic_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Free_Democratic_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Green_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_People%27s_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_National_People%27s_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_Independent_Social_Democratic_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_German_Left_Party_politicians",
-        "https://en.wikipedia.org/wiki/List_of_Liberal_Democratic_Party_of_Germany_politicians",
-        "https://en.wikipedia.org/wiki/List_of_National_Democratic_Party_of_Germany_politicians",
-        "https://en.wikipedia.org/wiki/List_of_Social_Democratic_Party_of_Germany_members",
-    ]
+class FrenchArtistSpider(scrapy.Spider):
+    name = "french_artist"
+    start_urls = ["https://en.wikipedia.org/wiki/List_of_French_singers"]
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -46,7 +26,7 @@ class GermanPoliticiansSpider(scrapy.Spider):
         return spider
 
     def spider_opened(self, spider):
-        self.progress = tqdm(total=0, desc="Crawling politicians", unit="pages")
+        self.progress = tqdm(total=0, desc="Crawling French singers", unit="pages")
 
     def spider_closed(self, spider):
         if self.progress:
@@ -74,11 +54,11 @@ class GermanPoliticiansSpider(scrapy.Spider):
 
             yield response.follow(
                 href,
-                callback=self.parse_politician,
+                callback=self.parse_singer,
                 cb_kwargs={"title": link.css("::text").get()},
             )
 
-    def parse_politician(self, response, title):
+    def parse_singer(self, response, title):
         image_url = (
             response.css(".infobox img::attr(src)").get()
             or response.css("figure a img::attr(src)").get()
