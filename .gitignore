@@ -214,3 +214,5 @@ data/*
 
 **/*.cfg
 *.settings.py
+
+*/archive

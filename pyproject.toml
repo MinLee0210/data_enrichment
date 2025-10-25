@@ -17,6 +17,7 @@ dependencies = [
     "python-dotenv==1.1.1",
     "requests==2.32.5",
     "ruff>=0.13.2",
+    "scrapy-playwright>=0.0.44",
     "scrapy>=2.13.3",
     "tqdm==4.67.1",
     "wikipedia-api==0.8.1",
