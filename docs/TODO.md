@@ -1,6 +1,6 @@
 # TODO
 
-
+- [ ] Create summary dataset for Vietnamese.
 - [ ] Create NER Dataset for Vietnamese.
     - Coverage of 
 
