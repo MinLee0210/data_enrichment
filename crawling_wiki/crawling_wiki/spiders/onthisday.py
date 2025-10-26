@@ -18,23 +18,23 @@ class OnThisDaySpider(scrapy.Spider):
         # "https://www.onthisday.com/people/generation/generation-alpha",
         # "https://www.onthisday.com/people/generation/millennial",
         # "https://www.onthisday.com/people/generation/generation-x",
-        # "https://www.onthisday.com/people/generation/baby-boomer", 
+        # "https://www.onthisday.com/people/generation/baby-boomer",
         # "https://www.onthisday.com/people/generation/silent-generation",
         # "https://www.onthisday.com/people/generation/lost-generation"
-        "https://www.onthisday.com/people/admirals", 
-        "https://www.onthisday.com/people/profession/anthropologists", 
-        "https://www.onthisday.com/people/artists", 
-        "https://www.onthisday.com/people/assassins", 
-        "https://www.onthisday.com/people/astronauts", 
-        "https://www.onthisday.com/people/profession/us-attorneys-general", 
-        "https://www.onthisday.com/people/australian-prime-ministers", 
-        "https://www.onthisday.com/people/profession/automobile-pioneers", 
-        "https://www.onthisday.com/people/aviators", 
-        "https://www.onthisday.com/people/british-prime-ministers", 
-        "https://www.onthisday.com/people/canadian-prime-ministers", 
-        "https://www.onthisday.com/people/chess-grandmasters", 
-        "https://www.onthisday.com/people/chinese-leaders", 
-        "https://www.onthisday.com/people/nationality/ukrainian"
+        "https://www.onthisday.com/people/admirals",
+        "https://www.onthisday.com/people/profession/anthropologists",
+        "https://www.onthisday.com/people/artists",
+        "https://www.onthisday.com/people/assassins",
+        "https://www.onthisday.com/people/astronauts",
+        "https://www.onthisday.com/people/profession/us-attorneys-general",
+        "https://www.onthisday.com/people/australian-prime-ministers",
+        "https://www.onthisday.com/people/profession/automobile-pioneers",
+        "https://www.onthisday.com/people/aviators",
+        "https://www.onthisday.com/people/british-prime-ministers",
+        "https://www.onthisday.com/people/canadian-prime-ministers",
+        "https://www.onthisday.com/people/chess-grandmasters",
+        "https://www.onthisday.com/people/chinese-leaders",
+        "https://www.onthisday.com/people/nationality/ukrainian",
     ]
     # ua = random.choice(user_agents)
 
@@ -65,7 +65,9 @@ class OnThisDaySpider(scrapy.Spider):
 
             # Clean up name (remove ranking numbers, commas, etc.)
             raw_texts = li.css("a::text").getall()
-            name = " ".join([t.strip() for t in raw_texts if t.strip() and not t.strip().isdigit()])
+            name = " ".join(
+                [t.strip() for t in raw_texts if t.strip() and not t.strip().isdigit()]
+            )
             name = name.split(",")[0] if "," in name else name
 
             if not name:
@@ -80,7 +82,6 @@ class OnThisDaySpider(scrapy.Spider):
                     "image_url": image_url,
                 },
                 # headers={"User-Agent": self.custom_settings["USER_AGENT"]},
-
             )
 
         # --- Pagination handler ---
@@ -107,17 +108,27 @@ class OnThisDaySpider(scrapy.Spider):
         image_url = response.meta["image_url"]
 
         def extract_after_label(label):
-            return response.xpath(f"//b[text()='{label}']/following-sibling::a/text()").get()
+            return response.xpath(
+                f"//b[text()='{label}']/following-sibling::a/text()"
+            ).get()
 
         def extract_text_after_label(label):
-            return response.xpath(f"//b[text()='{label}']/following-sibling::text()").get()
+            return response.xpath(
+                f"//b[text()='{label}']/following-sibling::text()"
+            ).get()
 
         main_type = extract_after_label("Profession:") or ""
         nationality = extract_after_label("Nationality:") or ""
         date_part = extract_after_label("Born:") or ""
-        year_part = response.xpath("//b[text()='Born:']/following-sibling::a[2]/text()").get()
+        year_part = response.xpath(
+            "//b[text()='Born:']/following-sibling::a[2]/text()"
+        ).get()
         birthplace = extract_text_after_label("Birthplace:") or ""
-        about = " ".join(response.xpath("//b[text()='Biography:']/following-sibling::text()").getall()).strip()
+        about = " ".join(
+            response.xpath(
+                "//b[text()='Biography:']/following-sibling::text()"
+            ).getall()
+        ).strip()
 
         if date_part and year_part:
             date_of_birth = f"{date_part} {year_part}"

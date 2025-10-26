@@ -9,7 +9,9 @@ class FamousBirthplacesFullSpider(scrapy.Spider):
     start_urls = ["https://www.famousbirthdays.com/birthplace/"]
 
     custom_settings = {
-        "FEEDS": {"famous_birthplaces_full.json": {"format": "json", "encoding": "utf8"}},
+        "FEEDS": {
+            "famous_birthplaces_full.json": {"format": "json", "encoding": "utf8"}
+        },
         "DOWNLOAD_DELAY": 0.5,
         "FEED_EXPORT_ENCODING": "utf-8",
     }
@@ -82,7 +84,9 @@ class FamousBirthplacesFullSpider(scrapy.Spider):
         profile_url = response.meta["profile_url"]
 
         # extract details
-        date_of_birth = response.css("span:contains('Birthday') + span a::text").getall()
+        date_of_birth = response.css(
+            "span:contains('Birthday') + span a::text"
+        ).getall()
         date_of_birth = " ".join(date_of_birth).strip() if date_of_birth else ""
 
         gender = ""
@@ -94,9 +98,21 @@ class FamousBirthplacesFullSpider(scrapy.Spider):
             birthplace = ", ".join(birth_city).strip()
 
         # extract About section
-        about = response.css("div.about h2:contains('About') + p::text").get(default="").strip()
-        before_fame = response.css("div.about h2:contains('Before Fame') + p::text").get(default="").strip()
-        trivia = response.css("div.about h2:contains('Trivia') + p::text").get(default="").strip()
+        about = (
+            response.css("div.about h2:contains('About') + p::text")
+            .get(default="")
+            .strip()
+        )
+        before_fame = (
+            response.css("div.about h2:contains('Before Fame') + p::text")
+            .get(default="")
+            .strip()
+        )
+        trivia = (
+            response.css("div.about h2:contains('Trivia') + p::text")
+            .get(default="")
+            .strip()
+        )
 
         yield {
             "profile_url": profile_url or "",

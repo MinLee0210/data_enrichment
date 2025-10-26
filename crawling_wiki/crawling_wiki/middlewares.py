@@ -99,7 +99,9 @@ class CrawlingWikiDownloaderMiddleware:
     def spider_opened(self, spider):
         spider.logger.info("Spider opened: %s" % spider.name)
 
+
 import random
+
 
 class RotateUserAgentMiddleware:
     def __init__(self, user_agents):

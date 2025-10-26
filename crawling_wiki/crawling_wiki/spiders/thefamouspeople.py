@@ -11,59 +11,59 @@ class FamousProfilesSpider(scrapy.Spider):
         # "https://www.thefamouspeople.com/thailand-men.php",
         # "https://www.thefamouspeople.com/thailand-women.php",
         # "https://www.thefamouspeople.com/thai-singers.php"
-        # "https://www.thefamouspeople.com/ukraine.php", 
-        # "https://www.thefamouspeople.com/ukrainian-musicians.php", 
-        # "https://www.thefamouspeople.com/ukrainian-writers.php", 
+        # "https://www.thefamouspeople.com/ukraine.php",
+        # "https://www.thefamouspeople.com/ukrainian-musicians.php",
+        # "https://www.thefamouspeople.com/ukrainian-writers.php",
         # "https://www.thefamouspeople.com/ukrainian-leaders.php"
-        # "https://www.thefamouspeople.com/vietnam.php", 
-        # "https://www.thefamouspeople.com/vietnam-men.php", 
-        # "https://www.thefamouspeople.com/vietnam-women.php", 
-        # "https://www.thefamouspeople.com/vietnamese-sportspersons.php", 
+        # "https://www.thefamouspeople.com/vietnam.php",
+        # "https://www.thefamouspeople.com/vietnam-men.php",
+        # "https://www.thefamouspeople.com/vietnam-women.php",
+        # "https://www.thefamouspeople.com/vietnamese-sportspersons.php",
         # "https://www.thefamouspeople.com/vietnamese-film-theater-personalities.php"
-        # "https://www.thefamouspeople.com/south_korea.php", 
-        # "https://www.thefamouspeople.com/south-korean-musicians.php", 
-        # "https://www.thefamouspeople.com/south-korean-singers.php", 
-        # "https://www.thefamouspeople.com/south-korean-film-theater-personalities.php", 
-        # "https://www.thefamouspeople.com/south-korean-leaders.php", 
-        # "https://www.thefamouspeople.com/south-korean-list-of-youtubers.php", 
-        # "https://www.thefamouspeople.com/south-korean-business-people.php", 
-        # "https://www.thefamouspeople.com/south-korean-sportspersons.php", 
-        # "https://www.thefamouspeople.com/taiwan.php", 
-        # "https://www.thefamouspeople.com/taiwan-women.php", 
-        # "https://www.thefamouspeople.com/taiwanese-singers.php", 
-        # "https://www.thefamouspeople.com/taiwanese-film-theater-personalities.php", 
-        # "https://www.thefamouspeople.com/taiwanese-leaders.php", 
-        # "https://www.thefamouspeople.com/taiwanese-sportspersons.php", 
-        # "https://www.thefamouspeople.com/russia.php", 
-        # "https://www.thefamouspeople.com/russian-federation-men.php", 
-        # "https://www.thefamouspeople.com/russian-leaders.php", 
-        # "https://www.thefamouspeople.com/russian-writers.php", 
-        # "https://www.thefamouspeople.com/russian-intellectuals-academics.php", 
-        # "https://www.thefamouspeople.com/russian-musicians.php", 
-        # "https://www.thefamouspeople.com/russian-sportspersons.php", 
-        # "https://www.thefamouspeople.com/russian-activists.php", 
-        # "https://www.thefamouspeople.com/russian-dancers.php", 
-        # "https://www.thefamouspeople.com/russian-scientists.php", 
-        # "https://www.thefamouspeople.com/russian-physicians.php", 
-        # "https://www.thefamouspeople.com/russian-painters.php", 
-        # "https://www.thefamouspeople.com/russian-inventors-discoverers.php", 
-        # "https://www.thefamouspeople.com/russian-film-theater-personalities.php", 
-        # "https://www.thefamouspeople.com/russian-list-of-social-media-stars.php", 
-        # "https://www.thefamouspeople.com/russian-list-of-instagram-stars.php", 
-        # "https://www.thefamouspeople.com/russian-list-of-youtubers.php", 
-        # "https://www.thefamouspeople.com/russian-fashion.php", 
-        # "https://www.thefamouspeople.com/russian-lawyers-judges.php", 
-        # "https://www.thefamouspeople.com/russian-business-people.php", 
-        # "https://www.thefamouspeople.com/russian-singers.php", 
-        # "https://www.thefamouspeople.com/russian-media-personalities.php", 
-        # "https://www.thefamouspeople.com/russian-criminals.php",   
-        # "https://www.thefamouspeople.com/russian-lyricists-songwriters.php",   
-        # "https://www.thefamouspeople.com/russian-spiritual-religious-leaders.php",   
-        # "https://www.thefamouspeople.com/russian-engineers.php",   
-        "https://www.thefamouspeople.com/list-of-musical-ly.php", 
-        "https://www.thefamouspeople.com/list-of-twitch-stars.php", 
-        "https://www.thefamouspeople.com/list-of-younow-stars.php", 
-        "https://www.thefamouspeople.com/list-of-viners.php"
+        # "https://www.thefamouspeople.com/south_korea.php",
+        # "https://www.thefamouspeople.com/south-korean-musicians.php",
+        # "https://www.thefamouspeople.com/south-korean-singers.php",
+        # "https://www.thefamouspeople.com/south-korean-film-theater-personalities.php",
+        # "https://www.thefamouspeople.com/south-korean-leaders.php",
+        # "https://www.thefamouspeople.com/south-korean-list-of-youtubers.php",
+        # "https://www.thefamouspeople.com/south-korean-business-people.php",
+        # "https://www.thefamouspeople.com/south-korean-sportspersons.php",
+        # "https://www.thefamouspeople.com/taiwan.php",
+        # "https://www.thefamouspeople.com/taiwan-women.php",
+        # "https://www.thefamouspeople.com/taiwanese-singers.php",
+        # "https://www.thefamouspeople.com/taiwanese-film-theater-personalities.php",
+        # "https://www.thefamouspeople.com/taiwanese-leaders.php",
+        # "https://www.thefamouspeople.com/taiwanese-sportspersons.php",
+        # "https://www.thefamouspeople.com/russia.php",
+        # "https://www.thefamouspeople.com/russian-federation-men.php",
+        # "https://www.thefamouspeople.com/russian-leaders.php",
+        # "https://www.thefamouspeople.com/russian-writers.php",
+        # "https://www.thefamouspeople.com/russian-intellectuals-academics.php",
+        # "https://www.thefamouspeople.com/russian-musicians.php",
+        # "https://www.thefamouspeople.com/russian-sportspersons.php",
+        # "https://www.thefamouspeople.com/russian-activists.php",
+        # "https://www.thefamouspeople.com/russian-dancers.php",
+        # "https://www.thefamouspeople.com/russian-scientists.php",
+        # "https://www.thefamouspeople.com/russian-physicians.php",
+        # "https://www.thefamouspeople.com/russian-painters.php",
+        # "https://www.thefamouspeople.com/russian-inventors-discoverers.php",
+        # "https://www.thefamouspeople.com/russian-film-theater-personalities.php",
+        # "https://www.thefamouspeople.com/russian-list-of-social-media-stars.php",
+        # "https://www.thefamouspeople.com/russian-list-of-instagram-stars.php",
+        # "https://www.thefamouspeople.com/russian-list-of-youtubers.php",
+        # "https://www.thefamouspeople.com/russian-fashion.php",
+        # "https://www.thefamouspeople.com/russian-lawyers-judges.php",
+        # "https://www.thefamouspeople.com/russian-business-people.php",
+        # "https://www.thefamouspeople.com/russian-singers.php",
+        # "https://www.thefamouspeople.com/russian-media-personalities.php",
+        # "https://www.thefamouspeople.com/russian-criminals.php",
+        # "https://www.thefamouspeople.com/russian-lyricists-songwriters.php",
+        # "https://www.thefamouspeople.com/russian-spiritual-religious-leaders.php",
+        # "https://www.thefamouspeople.com/russian-engineers.php",
+        "https://www.thefamouspeople.com/list-of-musical-ly.php",
+        "https://www.thefamouspeople.com/list-of-twitch-stars.php",
+        "https://www.thefamouspeople.com/list-of-younow-stars.php",
+        "https://www.thefamouspeople.com/list-of-viners.php",
     ]
 
     custom_settings = {
@@ -90,7 +90,12 @@ class FamousProfilesSpider(scrapy.Spider):
         for article in articles:
             # --- Name and mainType ---
             name = article.css(".ptitle-internal::text").get(default="").strip()
-            main_type = article.css(".ptitle-internal div::text").get(default="").strip("() ").strip()
+            main_type = (
+                article.css(".ptitle-internal div::text")
+                .get(default="")
+                .strip("() ")
+                .strip()
+            )
 
             # --- Profile URL ---
             profile_url = (
@@ -110,21 +115,23 @@ class FamousProfilesSpider(scrapy.Spider):
 
             if not image_url:
                 # Fallback: try any image in the 'image' div
-                image_url = (
-                    article.xpath(
-                        ".//div[contains(@class, 'image')]//img[contains(@src, '/thumbs/')]/@src"
-                    ).get()
-                )
+                image_url = article.xpath(
+                    ".//div[contains(@class, 'image')]//img[contains(@src, '/thumbs/')]/@src"
+                ).get()
                 image_url = self.normalize_url(response.url, image_url)
 
             # --- Enforce existence ---
             if not image_url:
                 raw_image_block = article.css("div.image").get()
-                self.logger.warning(f"⚠️ Missing image for {name or 'UNKNOWN'} ({response.url})\n{raw_image_block}")
+                self.logger.warning(
+                    f"⚠️ Missing image for {name or 'UNKNOWN'} ({response.url})\n{raw_image_block}"
+                )
 
             # --- Extract facts ---
             def extract(label):
-                val = article.xpath(f".//div[@class='desc-q'][b[contains(., '{label}')]]/text()").get()
+                val = article.xpath(
+                    f".//div[@class='desc-q'][b[contains(., '{label}')]]/text()"
+                ).get()
                 return val.strip() if val else ""
 
             def to_iso(date_str):

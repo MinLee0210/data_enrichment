@@ -1,9 +1,15 @@
 # TODO
 
+- [ ] Build notification <- once deployed on cloud, should have this mechanism to notify when the process is done.
 - [ ] Create summary dataset for Vietnamese.
+    - [x] 0001 -> 18294
+    - [ ] 0002
+    - [ ] 0003
+    - [ ] 0004
+    - [ ] 0005
 - [ ] Create NER Dataset for Vietnamese.
-    - Coverage of 
-
+    - Cover many topcis:
+        - At the moment, focus on politics, news (entertainment, travels, ...), books. 
 
 - [x] Scrape Vietnamese Lawyers: https://www.danhbaluatsu.com/luat-su/p1
 - Scrape Vietnamese Doctors:

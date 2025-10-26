@@ -29,6 +29,7 @@ class WikiThaiPeopleSpider(scrapy.Spider):
 
     def parse_profile(self, response):
         """Extract profile info and infobox metadata."""
+
         def clean_join(elements):
             texts = [
                 t.strip()
