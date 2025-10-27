@@ -1,10 +1,17 @@
 # TODO
 
+- [ ] Use this dataset from huggingfaceFW to build NER/summary/snli/suggest_questions:
+    - HuggingFaceFW/fineweb-edu
+    - HuggingFaceFW/fineweb
+    - NOTE: Just get the latest -> CC-MAIN-2025-26
+
+- [ ] Use this data for pseudo chat -> building character for NPC: 
+    datasetid: proj-persona/PersonaHub
 - [ ] Build notification <- once deployed on cloud, should have this mechanism to notify when the process is done.
 - [ ] Create summary dataset for Vietnamese.
     - [x] 0001 -> 18294
-    - [ ] 0002
-    - [ ] 0003
+    - [x] 0002
+    - [x] 0003
     - [ ] 0004
     - [ ] 0005
 - [ ] Create NER Dataset for Vietnamese.

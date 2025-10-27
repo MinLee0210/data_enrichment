@@ -1,17 +1,12 @@
-# Define the type alias for clarity
-from typing import Union, Dict, List, Any
 import json
 import os
 from pathlib import Path
-
+from typing import Any, Dict, List, Union
 
 from src.utils.logger_util import setup_logger
 
-
-
 JsonData = Union[Dict[str, Any], List[Any]]
 logger = setup_logger()
-
 
 
 def write_json(filepath: str, data: JsonData) -> bool:
