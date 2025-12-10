@@ -38,19 +38,50 @@
 - [x] https://fpt.com/vi/ve-fpt/doi-ngu-lanh-dao
 
 
-- [ ] https://www.consilium.europa.eu/en/european-council/members/
 - [ ] https://eumostwanted.eu/
+- [ ] https://dbqh.quochoi.vn/default.aspx
+- [ ] https://www.basketball-reference.com/players/
+- [ ] https://www.consilium.europa.eu/en/european-council/members/
+- [ ] https://en.wikipedia.org/wiki/Category:American_journalists
+- [ ] https://www.cpophome.com/
+
+- [ ] Soccer player
+    - VN. 
+    - SEA. 
+    - World: ...
+
+- [ ] Basketball player
+
+
+- [ ] https://www.is.vnu.edu.vn/category/can-bo-tai-khoa-ckhud/
+- [ ] https://www.is.vnu.edu.vn/gioithieu/khoa-kinh-te-quan-ly/gioi-thieu-chung-khoa-ktql-2/giang-vien-khoa-kinh-te-va-quan-ly/
+- [ ] https://www.is.vnu.edu.vn/category/can-bo-tai-khoa-ngon-ngu-ung-dung/
+- [ ] https://www.is.vnu.edu.vn/category/doi-ngu-giang-vien-khoa-ky-thuat-cong-nghe/
+- [ ] https://www.is.vnu.edu.vn/category/doi-ngu-giang-vien-khoa-tai-chinh-ke-toan/
+- [ ] https://fishanu.vn/doi-ngu-giang-vien/
+- [ ] https://fbm.neu.edu.vn/gioi-thieu/doi-ngu-giang-vien/
+- [ ] https://www.fit.hcmus.edu.vn/sau-dai-hoc/giang-vien
+- [ ] http://kqtkd.ou.edu.vn/doi-ngu-giang-vien
+- [ ] https://isb.edu.vn/doi-ngu-giang-vien/
+- [ ] https://www.uef.edu.vn/kluat/gioi-thieu/doi-ngu-giang-vien-877
+- [ ] https://tbd.edu.vn/en/our-faculty/
+- [ ] https://vku.udn.vn/official-lecturers/
+- [ ] https://www.buv.edu.vn/our-faculty/
+- [ ] https://fda.neu.edu.vn/doi-ngu-can-bo-giang-vien/
+- [ ] https://www.who2.com/a-to-z/
+
+- [ ] https://www.famousbirthdays.com/
+- [ ] https://www.thefamousbirthdays.com/
+- [ ] https://www.sunsigns.org/famousbirthdays/d/?page=0
+
+## 05/12/2025
+
+- [ ]         "https://en.wikipedia.org/wiki/List_of_prematurely_reported_obituaries", 
 - [ ] https://en.wikipedia.org/wiki/List_of_people_from_Serbia#Singers_and_rappers
 - [ ] https://en.wikipedia.org/wiki/List_of_people_from_Serbia#Religion
 - [ ] https://en.wikipedia.org/wiki/Lists_of_mathematicians
 - [ ] https://en.wikipedia.org/wiki/List_of_men's_footballers_with_100_or_more_international_caps
-- [ ] https://www.basketball-reference.com/players/
-
 - [ ] https://en.wikipedia.org/wiki/List_of_American_print_journalists
-- [ ] https://en.wikipedia.org/wiki/Category:American_journalists
-
-
-
 
 - [x] https://www.thefamouspeople.com/thailand.php
 - [x] https://www.thefamouspeople.com/thailand-women.php
