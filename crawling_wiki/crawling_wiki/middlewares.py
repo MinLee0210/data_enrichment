@@ -100,18 +100,18 @@ class CrawlingWikiDownloaderMiddleware:
         spider.logger.info("Spider opened: %s" % spider.name)
 
 
-# import random
+import random
 
 
-# class RotateUserAgentMiddleware:
-#     def __init__(self, user_agents):
-#         self.user_agents = user_agents
+class RotateUserAgentMiddleware:
+    def __init__(self, user_agents):
+        self.user_agents = user_agents
 
-#     @classmethod
-#     def from_crawler(cls, crawler):
-#         uas = crawler.settings.getlist("MY_USER_AGENTS")
-#         return cls(uas)
+    @classmethod
+    def from_crawler(cls, crawler):
+        uas = crawler.settings.getlist("MY_USER_AGENTS")
+        return cls(uas)
 
-#     def process_request(self, request, spider):
-#         ua = random.choice(self.user_agents)
-#         request.headers.setdefault(b"User-Agent", ua)
+    def process_request(self, request, spider):
+        ua = random.choice(self.user_agents)
+        request.headers.setdefault(b"User-Agent", ua)

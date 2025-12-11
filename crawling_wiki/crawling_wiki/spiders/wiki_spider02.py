@@ -9,14 +9,13 @@ class WikiSpider(scrapy.Spider):
         # "https://en.wikipedia.org/wiki/List_of_Thai_actresses",
         # "https://en.wikipedia.org/wiki/List_of_Thai_male_actors",
         # "https://en.wikipedia.org/wiki/List_of_Thai_film_directors"
-        # "https://en.wikipedia.org/wiki/List_of_Khmer_film_actors", 
-        # "https://en.wikipedia.org/wiki/List_of_Egyptians#Actors", 
-        # "https://en.wikipedia.org/wiki/Lists_of_Indian_actors", 
-        # "https://en.wikipedia.org/wiki/List_of_Indian_film_actresses", 
-        # "https://en.wikipedia.org/wiki/List_of_Indian_male_film_actors", 
-        # "https://en.wikipedia.org/wiki/List_of_Iranian_actresses", 
-        # "https://en.wikipedia.org/wiki/List_of_Iranian_male_actors", 
-        
+        # "https://en.wikipedia.org/wiki/List_of_Khmer_film_actors",
+        # "https://en.wikipedia.org/wiki/List_of_Egyptians#Actors",
+        # "https://en.wikipedia.org/wiki/Lists_of_Indian_actors",
+        # "https://en.wikipedia.org/wiki/List_of_Indian_film_actresses",
+        # "https://en.wikipedia.org/wiki/List_of_Indian_male_film_actors",
+        # "https://en.wikipedia.org/wiki/List_of_Iranian_actresses",
+        # "https://en.wikipedia.org/wiki/List_of_Iranian_male_actors",
     ]
 
     custom_settings = {

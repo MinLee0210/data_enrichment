@@ -14,13 +14,13 @@ class OnThisDaySpider(scrapy.Spider):
     name = "onthisday"
     allowed_domains = ["onthisday.com"]
     start_urls = [
-        # "https://www.onthisday.com/people/generation/generation-z",
-        # "https://www.onthisday.com/people/generation/generation-alpha",
-        # "https://www.onthisday.com/people/generation/millennial",
-        # "https://www.onthisday.com/people/generation/generation-x",
-        # "https://www.onthisday.com/people/generation/baby-boomer",
-        # "https://www.onthisday.com/people/generation/silent-generation",
-        # "https://www.onthisday.com/people/generation/lost-generation"
+        "https://www.onthisday.com/people/generation/generation-z",
+        "https://www.onthisday.com/people/generation/generation-alpha",
+        "https://www.onthisday.com/people/generation/millennial",
+        "https://www.onthisday.com/people/generation/generation-x",
+        "https://www.onthisday.com/people/generation/baby-boomer",
+        "https://www.onthisday.com/people/generation/silent-generation",
+        "https://www.onthisday.com/people/generation/lost-generation"
         "https://www.onthisday.com/people/admirals",
         "https://www.onthisday.com/people/profession/anthropologists",
         "https://www.onthisday.com/people/artists",

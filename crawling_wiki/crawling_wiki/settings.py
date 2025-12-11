@@ -31,7 +31,7 @@ RANDOMIZE_DOWNLOAD_DELAY = True
 DOWNLOAD_TIMEOUT = 15  # 15 seconds max per request
 
 # Concurrency
-CONCURRENT_REQUESTS = 10  # 5–6 workers
+CONCURRENT_REQUESTS = 12  # 5–6 workers
 CONCURRENT_REQUESTS_PER_DOMAIN = 10
 
 # Disable cookies (enabled by default)
